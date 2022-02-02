@@ -1,9 +1,0 @@
----
-layout: post
-title:  "por fin"
-date:   2022-02-02 11:32:19 +0100
-categories: jekyll update
----
-# Por fin
-He conseguido hoy el 2 de Febrero que mi página markdown de documentación funcione.
->de lokos.
