@@ -24,7 +24,7 @@ Para usar el protocolo SSH instalo en la máquina servidora el paquete openssh-s
 
 ![image3](../images/image3.png)
 
-![image3](../images/image3-16434540278501.png)
+![image3A](../images/image3-16434540278501.png)
 
 
 
