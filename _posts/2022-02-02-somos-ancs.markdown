@@ -7,4 +7,4 @@ categories: jekyll update
 # Bienvenido a nuestra página de documentación.
 > En esta página pondremos nuestra documentación sobre el reto propuesto en nuestro ciclo.
 > Esta página aún está en desarrollo, por lo que actualmente se ve no representa el resultado final.
-[I <3 ANCS](https://totoshop.es/38158/taza-i-love-ancs.jpg)
+![I <3 ANCS](https://totoshop.es/38158/taza-i-love-ancs.jpg)
