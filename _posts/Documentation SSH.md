@@ -1,3 +1,9 @@
+---
+layout: post
+title:  "Somos ANCS"
+date:   2022-02-02 11:32:19 +0100
+categories: jekyll update
+---
 **Conexion remota con SSH**
 
 Compruebo que hay conexión entre la máquina "dmzserver" y "dmzclient":
