@@ -8,7 +8,7 @@ categories: jekyll update
 
 Compruebo que hay conexión entre la máquina "dmzserver" y "dmzclient":
 
-![image1](images/image1.png)
+![image1](../images/image1.png)
 
 
 
