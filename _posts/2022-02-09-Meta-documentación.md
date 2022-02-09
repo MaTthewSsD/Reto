@@ -49,3 +49,20 @@ Ahora lanzamos en local nuestra página estática.
 Ahora solo queda ver por local la página.
 
 ![](https://github.com/MaTthewSsD/Fotos/blob/main/6.png?raw=true)
+## Trasladar página a Github Pages
+
+Primero tengo que crear un repositorio para guardar los ficheros.
+
+![](https://github.com/MaTthewSsD/Fotos/blob/main/7.png?raw=true)
+
+Una vez creado el repositorio copio los archivos generados por el comando `jekyll new blog` y los subo a el repositorio.
+
+Ahora mostraré un ejemplo del resultado:
+
+![](https://github.com/MaTthewSsD/Fotos/blob/main/8.png?raw=true)
+
+Ahora mostraré un ejemplo de una página subida mediante este método.
+
+![](https://github.com/MaTthewSsD/Fotos/blob/main/9.png?raw=true)
+
+En otro momento subiré como cambiar de tema en jekyll.
