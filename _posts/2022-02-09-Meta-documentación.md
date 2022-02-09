@@ -1,3 +1,9 @@
+---
+layout: post
+title:  "Metadocumentación"
+date:   2022-02-02 11:32:19 +0100
+categories: jekyll update
+---
 # Meta-documentación
 
 ## Preparación de la MV donde hago los testeos en local
