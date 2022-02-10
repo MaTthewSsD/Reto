@@ -25,10 +25,11 @@ baseurl: "Reto" # the subpath of your site, e.g. /blog
 
 # Build settings
 markdown: kramdown
-remote_theme: https://github.com/pages-themes/merlot@v0.2.0
+#remote_theme: https://github.com/pages-themes/merlot@v0.2.0
+theme: minima
 plugins:
-#  - jekyll-feed
-  - jekyll-remote-theme
+  - jekyll-feed
+#  - jekyll-remote-theme
 
 # Exclude from processing.
 # The following items will not be processed, by default.
