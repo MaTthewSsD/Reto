@@ -1,0 +1,65 @@
+
+
+# Instalación del DNS en el servidor de la DMZ.
+
+
+
+
+
+Actualizamos las librerías de paquetes del sistema.![image-20220129183326966](/home/jolt/Documentos/RetoAC/image-20220129183326966.png)
+Después instalamos Bind9, será nuestro programa que nos ayudará a configurar nuestros nombres de dominio. En él instalaremos
+![image-20220129183546241](/home/jolt/Documentos/RetoAC/image-20220129183546241.png)
+
+## Fichero /etc/bind/named.conf.options.
+
+Aquí indicamos en el fichero /etc/bind/named.conf.options los servidores de reenvío de DNS. Cuando realicemos consultas de DNS las consultas se pueden indicar que Google responda a esas consultas por ejemplo, aquí indico que el servidor que responda a las consultas DNS sea el mismo servidor, de momento de forma local.
+
+![image-20220210005643924](/home/jolt/Documentos/RetoAC/image-20220210005643924.png)
+
+Después dentro de los ficheros de bind9 tenemos al fichero named.conf.local este fichero contiene la dirección de dónde pillará nuestro servidor la configuración y las respuestas a las consultas directas e inversas. Aquí indico el fichero db.ancs.xyz con el cuál responderá a la consulta. Aquí también indicamos el tipo de servidor si es "master" primario, o "slave" secundario.
+
+![image-20220129194658364](/home/jolt/Documentos/RetoAC/image-20220129194658364.png)
+
+## Resolución directa. Fichero /etc/named.conf.local
+
+Este es el fichero db.ancs.xyz es un fichero de zona donde indicamos las direcciones IP asociadas distintos nombres. Puse en este caso el subdominio de retoSRI, asociada a la IP de esta máquina.
+
+![image-20220129193053514](/home/jolt/Documentos/RetoAC/image-20220129193053514.png)
+
+## Resolución directa. Fichero de zona
+
+Con estos comandos comprobamos si la sintaxis de los ficheros está realizada correctamente
+
+![image-20220129194824646](/home/jolt/Documentos/RetoAC/image-20220129194824646.png)
+
+Con un nslookup retoSRI.ancs.xyz en nuestro servidor comprobamos que funciona en nuestro propio servidor, si respondemos de forma local. 
+
+![image-20220129194824646](/home/jolt/Documentos/RetoAC/image-20220129194824646.png)
+
+En esta otra máquina compruebo que se resuelve el nombre de forma local si lo conectamos a la red del servidor. Aquí vemos que recibimos una línea más, es el servidor de nombres haciendo la resolución directa y mandando la respuesta al cliente.
+
+![image-20220129195318769](/home/jolt/Documentos/RetoAC/image-20220129195318769.png)
+
+ Para poder resolverlo primero debemos indicar en el cliente en qué servidor debe preguntar para realizar las consultas DNS, en él indicamos el servidor DNS que hemos recientemente creado en el fichero /etc/hosts.
+
+![image-20220129195318769](/home/jolt/Documentos/RetoAC/image-20220129195318769.png)
+
+Entonces, después de realizar la resolución directa debemos realizar la resolución inversa. Debemos indicar la zona inversa 100.16.172.in-addr-arpa, servidor de tipo primario y el fichero de zona de resolución inversa. 
+
+## Resolución inversa. Fichero /etc/bind/named.conf.options
+
+![image-20220129200015139](/home/jolt/Documentos/RetoAC/image-20220129200015139.png)
+
+Aquí está la configuración de resolución inversa. Aquí primero debemos indicar la IP y asociarlo al nombre de dominio.
+
+## Resolución inversa. Fichero de zona.
+
+![image-20220129202756295](/home/jolt/Documentos/RetoAC/image-20220129202756295.png)
+
+Una vez hecho esto confirmamos que la configuración del fichero tenga la sintaxis correcta y reiniciamos el servicio. Tras esto realizamos la resolución inversa poniendo la IP del servidor.
+
+![image-20220129202745092](/home/jolt/Documentos/RetoAC/image-20220129202745092.png)
+
+La resolución del cliente:
+
+![image-20220210013436465](/home/jolt/Documentos/RetoAC/image-20220210013436465.png)
