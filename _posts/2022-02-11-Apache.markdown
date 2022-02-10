@@ -1,0 +1,18 @@
+---
+layout: post
+title:  "Apache"
+date:   2022-02-02 11:32:19 +0100
+categories: jekyll update
+---
+# Instalación del servidor Apache en OpenSuse
+
+Primero me conecto por ssh a la máquina openSuse.
+
+`ssh -i alumno_redinterna.pem alumno@20.111.12.196`
+
+Una vez conectado hago un `zypper update`
+![](https://raw.githubusercontent.com/MaTthewSsD/Fotos/main/apache/Selecci%C3%B3n_202.png)
+
+Ahora instalo Apache2 con `zypper install apache2`
+
+![](https://raw.githubusercontent.com/MaTthewSsD/Fotos/main/apache/Selecci%C3%B3n_203.png)
