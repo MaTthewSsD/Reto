@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Metadocumentación"
-date:   2022-01-09 11:32:19 +0100
+date:   2022-01-02 11:32:19 +0100
 categories: jekyll update
 ---
 # Meta-documentación
