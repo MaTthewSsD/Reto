@@ -4,10 +4,8 @@ title:  "Creación de infraestructura en Azure"
 date:   2022-01-30 11:32:19 +0100
 categories: jekyll update
 ---
-###### Reto Game of Networks
 ## Creación de la Infraestructura en Microsoft AZURE
-#### Entrega de: *Denis Alexander Gutiérrez Salvador*
-Cabe aclarar, que hay muchas más funciones de las que mostrare en está parte y opciones más optimas para realizarlas, en mi caso, me he centrado en lo que necesitaba.
+Cabe aclarar, que hay muchas más funciones de las que mostraremos en está parte y opciones más optimas para realizarlas, en nuestro caso, nos hemos centrado en lo que necesitabamos.
 
 #### 1. Empezando con Azure:
 Selecci%C3%B3n_106.png
