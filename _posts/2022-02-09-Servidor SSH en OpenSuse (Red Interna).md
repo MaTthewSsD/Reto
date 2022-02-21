@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "SSH en red interna"
-date:   2022-02-02 11:32:19 +0100
+date:   2022-01-05 11:32:19 +0100
 categories: jekyll update
 ---
 Instalación Servidor SSH en OpenSuse (Red Interna) 
