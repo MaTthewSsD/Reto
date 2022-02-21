@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "SSH documentation"
-date:   2022-01-04 11:32:19 +0100
+date:   2022-01-28 11:32:19 +0100
 categories: jekyll update
 ---
 **Conexion remota con SSH**
