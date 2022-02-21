@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Creación de infraestructura en Azure"
-date:   2022-01-03 11:32:19 +0100
+date:   2022-01-30 11:32:19 +0100
 categories: jekyll update
 ---
 ###### Reto Game of Networks
