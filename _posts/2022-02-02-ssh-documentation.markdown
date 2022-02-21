@@ -1,72 +1,70 @@
 ---
 layout: post
-title:  "SSH documentation"
+title:  "SSH en red DMZ"
 date:   2022-01-28 11:32:19 +0100
 categories: jekyll update
 ---
 **Conexion remota con SSH**
 
-Compruebo que hay conexión entre la máquina "dmzserver" y "dmzclient":
+Comprobar la conexión entre "dmzserver" y "dmzclient":
 image1.png
 ![image1](https://raw.githubusercontent.com/MaTthewSsD/Reto/gh-pages/images/image1.png)
 
 
 
-Confirmo que hay conexión entre la máquina "dmzclient" y "dmzserver":
+Confirmar la conexión:
 
 ![image2](https://raw.githubusercontent.com/MaTthewSsD/Reto/gh-pages/images/image2.png)
 
 
 
-(Si la conexión entre equipos se pierde reiniciar los sistemas).
+(Si la conexión entre equipos se pierde, reiniciar los sistemas).
 
-Para usar el protocolo SSH instalo en la máquina servidora el paquete openssh-server:
+Para usar el protocolo SSH hay que instalar el paquete openssh-server:
 
 ![image3](https://raw.githubusercontent.com/MaTthewSsD/Reto/gh-pages/images/image3.png)
 
-![image3A](https://raw.githubusercontent.com/MaTthewSsD/Reto/gh-pages/images/image3-16434540278501.png)
 
 
-
-Instalo en la máquina cliente el paquete openssh-client:
+En la máquina cliente, instalar el paquete openssh-client:
 
 ![image5](https://raw.githubusercontent.com/MaTthewSsD/Reto/gh-pages/images/image5.png)
 
 
 
-Me conecto desde la máquina cliente a la servidora:
+Conexión desde la máquina cliente a la servidora:
 
 ![image7](https://raw.githubusercontent.com/MaTthewSsD/Reto/gh-pages/images/image7.png)
 
 
 
-Hago una copia de seguridad de "/etc/ssh/sshd_config" y editamos para mejorar la seguridad:
+Hacer una copia de seguridad de "/etc/ssh/sshd_config" y editar para mejorar la seguridad:
 
-Cambio el puerto 22 por defecto para establecer la conexión por el 2222.
+Modificación del puerto 22 por defecto para establecer la conexión por el 2222.
 
-Bloqueo el acceso root en las conexiones remotas.
+Bloquear el acceso root en las conexiones remotas.
 
 ![image9](https://raw.githubusercontent.com/MaTthewSsD/Reto/gh-pages/images/image9.png)
 
 
 
-Cambio el tiempo que tenemos para acceder al servidor con contraseña:
+Modificar el tiempo que tenemos para acceder al servidor con contraseña:
 
 ![image10](https://raw.githubusercontent.com/MaTthewSsD/Reto/gh-pages/images/image10.png)
 
 
 
-Cambio el máximo de intentos para entrar:
+Modificar el número máximo de intentos para entrar:
 
 ![image12](https://raw.githubusercontent.com/MaTthewSsD/Reto/gh-pages/images/image12.png)
 
 
 
-Reinicio el servicio con "/etc/init.d/sshd restart".
+Reiniciar el servicio con "/etc/init.d/sshd restart".
 
 
 
-Confirmo que me puedo conectar:
+Confirmar que se puede conectar:
 
 ![image13](https://raw.githubusercontent.com/MaTthewSsD/Reto/gh-pages/images/image13.png)
 
