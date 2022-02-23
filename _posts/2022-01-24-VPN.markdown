@@ -13,7 +13,6 @@ categories: jekyll update
 #### 1. Empezando con OpenVPN:
 
 Vamos primero a "Sistema" > "Gestión de Usuarios" y creamos 1 usuario:
-https://github.com/MaTthewSsD/Reto/blob/gh-pages/_posts/vpn/image-20220222232410691.png?raw=true
 ![image-20220222232410691](https://github.com/MaTthewSsD/Reto/blob/gh-pages/_posts/vpn/image-20220222232410691.png?raw=true)
 
 La contraseña le ponemos la misma que el usuario:
