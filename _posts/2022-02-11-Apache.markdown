@@ -55,7 +55,7 @@ Para poder acceder a ambas páginas usando sus nombres de dominio, sin necesidad
 
 ![](https://github.com/MaTthewSsD/Reto/blob/gh-pages/a/Snap%202022-02-23%20at%2022.58.12.png?raw=true)
 
-Aquí hay una captura de la página vista desde un navegador en la red LAN de ambas páginas:
+Aquí hay una captura desde un navegador en la red LAN de ambas páginas:
 
 ![](https://github.com/MaTthewSsD/Reto/blob/gh-pages/a/Snap%202022-02-23%20at%2022.54.50.png?raw=true)
 
