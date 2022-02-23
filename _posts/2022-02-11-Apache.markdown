@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Apache"
-date:   2022-01-24 11:32:19 +0100
+date:   2022-02-02 11:32:19 +0100
 categories: jekyll update
 ---
 # Instalación del servidor Apache en OpenSuse
@@ -17,4 +17,46 @@ Ahora instalamos Apache2 con `zypper install apache2`
 
 ![](https://raw.githubusercontent.com/MaTthewSsD/Fotos/main/apache/Selecci%C3%B3n_203.png)
 
-De momento ya tenemos habilitadas las página http(informatica) y https(formación), pero debido a que la vpn está fallando no aporto la documentación aún, ya que podría cambiar, pero ya está comprobado que funciona.
+En OpenSuse el directorio Root donde se almacenan los ficheros html, css y js es /srv/www/htdocs
+
+Con el comando `sudo apachectl -M` habilito los módulos necesarios.
+
+Dentro del fichero `/etc/sysconfig/apache2` agrego ssl a la siguiente línea.
+
+```
+...
+APACHE_SERVER_FLAGS=""
+...
+```
+
+```
+...
+APACHE_SERVER_FLAGS="SSL"
+...
+```
+
+Para obtener el certificado ssl hemos usado el comando:
+
+`openssl req -newkey rsa:2048 -x509 -nodes -days 365 -out /etc/apache2/ssl.crt/server.crt -keyout /etc     /apache2/ssl.key/server.key`
+
+Este es el fichero de configuración de las páginas de formación e informática.
+
+![](https://github.com/MaTthewSsD/Reto/blob/gh-pages/a/Snap%202022-02-23%20at%2022.39.34.png?raw=true)
+
+El contenido de `/srv/www/htdocs/formacion/` es:
+
+![](https://github.com/MaTthewSsD/Reto/blob/gh-pages/a/Snap%202022-02-23%20at%2022.51.24.png?raw=true)
+
+Y el contenido de el directorio `/srv/www/htdocs/informatica/` es:
+
+![](https://github.com/MaTthewSsD/Reto/blob/gh-pages/a/Snap%202022-02-23%20at%2022.53.09.png?raw=true)
+
+Para poder acceder a ambas páginas usando sus nombres de dominio, sin necesidad de crear un servidor DNS, he modificado en una máquina windows el fichero `C:\Windows\System32\drivers\etc\hosts` :
+
+![](https://github.com/MaTthewSsD/Reto/blob/gh-pages/a/Snap%202022-02-23%20at%2022.58.12.png?raw=true)
+
+Aquí hay una captura de la página vista desde un navegador en la red LAN de ambas páginas:
+
+![](https://github.com/MaTthewSsD/Reto/blob/gh-pages/a/Snap%202022-02-23%20at%2022.54.50.png?raw=true)
+
+![](https://github.com/MaTthewSsD/Reto/blob/gh-pages/a/Snap%202022-02-23%20at%2022.56.23.png?raw=true)
