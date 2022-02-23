@@ -1,0 +1,133 @@
+---
+layout: post
+title:  "VPN"
+date:   2022-01-24 11:32:19 +0100
+categories: jekyll update
+---
+###### Reto Game of Networks
+
+## Creación de VPN en PFSENSE
+
+#### Entrega de: *Denis Alexander Gutiérrez Salvador*
+
+#### 1. Empezando con OpenVPN:
+
+Vamos primero a "Sistema" > "Gestión de Usuarios" y creamos 1 usuario:
+
+![image-20220222232410691](vpn/image-20220222232410691.png)
+
+La contraseña le ponemos la misma que el usuario:
+
+![image-20220222232547976](vpn/image-20220222232547976.png)
+
+![image-20220222232641684](vpn/image-20220222232641684.png)
+
+Ahora creamos nuestros certificados para nuestro servidor y nuestros usuarios:
+
+![image-20220222232817957](vpn/image-20220222232817957.png)
+
+Añadimos uno y rellenamos con los datos:
+
+![image-20220222232927137](vpn/image-20220222232927137.png)
+
+![image-20220222233004776](vpn/image-20220222233004776.png)
+
+Por defecto tendremos nuestro certificado de servidor, le damos a "añadir":
+
+![image-20220222233527923](vpn/image-20220222233527923.png)
+
+En certificados le indicamos el nombre y la Autoridad certificada que en nuestro caso será la que hemos creado anteriormente:
+
+![image-20220222233704257](vpn/image-20220222233704257.png)
+
+En Tipo de certificado le damos a "Server Certficate" y damos a "añadir" y "guardar":
+
+![image-20220222233905972](vpn/image-20220222233905972.png)
+
+Nos saldrá algo parecido a esto:
+
+![image-20220222233928377](vpn/image-20220222233928377.png)
+
+Una vez hecho los dos certificados, vamos a añadir nuestro certificado al usuario, en este caso "denis":
+
+![image-20220222234033762](vpn/image-20220222234033762.png)
+
+Le damos a editar y en el apartado "Certificados de usuario" le damos a "añadir" y en el "Tipo de certificado" le indicamos "User Certificate":
+
+![image-20220222234154915](vpn/image-20220222234154915.png)
+
+![image-20220222234239395](vpn/image-20220222234239395.png)
+
+Vemos que en nuestros certificados, aparece el usuario y su certificado:
+
+![image-20220222234330583](vpn/image-20220222234330583.png)
+
+Vamos a "OpenVPN" > "Servidores" y añadimos un nuevo servidor:
+
+![image-20220222235036387](vpn/image-20220222235036387.png)
+
+Le ponemos una descripción, le indicamos el protocolo UDP, la interfaz a la que va a escuchar y el puerto:
+
+![image-20220223131328109](vpn/image-20220223131328109.png)
+
+Le indicamos la red a la que nos queremos conectar remotamente:
+
+![image-20220223131658912](vpn/image-20220223131658912.png)
+
+Le indicamos que permita a los clientes conectados conservar sus conexiones:
+
+![image-20220223133313090](vpn/image-20220223133313090.png)
+
+Le indicamos que la pasarela sea solo por IPv4 y que el nivel de información sea el 3:
+
+![image-20220223133419220](vpn/image-20220223133419220.png)
+
+![image-20220223133445912](vpn/image-20220223133445912.png)
+
+Añadimos una nueva regla en el firewall para que nos permita el trafico:
+
+![image-20220223133613899](vpn/image-20220223133613899.png)
+
+![image-20220223133647056](vpn/image-20220223133647056.png)
+
+En la interfaz del OpenVPN también habilitamos una regla de paso:
+
+![image-20220223133804814](vpn/image-20220223133804814.png)
+
+Guardamos y aplicamos los cambios:
+
+![image-20220223133827313](vpn/image-20220223133827313.png)
+
+Ahora vamos a "Gerente de empaquetación":
+
+![image-20220223133905219](vpn/image-20220223133905219.png)
+
+Y buscamos en "Paquetes disponibles", "OpenVPN-client-export":
+
+![image-20220223134022076](vpn/image-20220223134022076.png)
+
+Instalamos:
+
+![image-20220223134038541](vpn/image-20220223134038541.png)
+
+Una vez hecho esto, vamos a "VPN" > "Client export" y descargamos la configuración del cliente:
+
+![image-20220223134151330](vpn/image-20220223134151330.png)
+
+![image-20220223134253978](vpn/image-20220223134253978.png)
+
+Permitimos una regla de firewall en azure para el paso por el puerto 1194:
+
+![image-20220223134657267](vpn/image-20220223134657267.png)
+
+Instalamos el fichero en OpenVPN:
+
+![image-20220223134917837](vpn/image-20220223134917837.png)
+
+Activamos la VPN:
+
+![image-20220223134947357](vpn/image-20220223134947357.png)
+
+Realizamos un ping al Pfsense e intantamos conectarnos al pfsense:
+
+![image-20220223135117401](vpn/image-20220223135117401.png)
