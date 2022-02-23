@@ -14,120 +14,120 @@ categories: jekyll update
 
 Vamos primero a "Sistema" > "Gestión de Usuarios" y creamos 1 usuario:
 https://github.com/MaTthewSsD/Reto/blob/gh-pages/_posts/vpn/image-20220222232410691.png?raw=true
-![image-20220222232410691](https://github.com/MaTthewSsD/Reto/blob/gh-pages/_posts/vpn/image-20220222232410691.png)
+![image-20220222232410691](https://github.com/MaTthewSsD/Reto/blob/gh-pages/_posts/vpn/image-20220222232410691.png?raw=true)
 
 La contraseña le ponemos la misma que el usuario:
 
-![image-20220222232547976](https://github.com/MaTthewSsD/Reto/blob/gh-pages/_posts/vpn/image-20220222232547976.png)
+![image-20220222232547976](https://github.com/MaTthewSsD/Reto/blob/gh-pages/_posts/vpn/image-20220222232547976.png?raw=true)
 
-![image-20220222232641684](https://github.com/MaTthewSsD/Reto/blob/gh-pages/_posts/vpn/image-20220222232641684.png)
+![image-20220222232641684](https://github.com/MaTthewSsD/Reto/blob/gh-pages/_posts/vpn/image-20220222232641684.png?raw=true)
 
 Ahora creamos nuestros certificados para nuestro servidor y nuestros usuarios:
 
-![image-20220222232817957](https://github.com/MaTthewSsD/Reto/blob/gh-pages/_posts/vpn/image-20220222232817957.png)
+![image-20220222232817957](https://github.com/MaTthewSsD/Reto/blob/gh-pages/_posts/vpn/image-20220222232817957.png?raw=true)
 
 Añadimos uno y rellenamos con los datos:
 
-![image-20220222232927137](https://github.com/MaTthewSsD/Reto/blob/gh-pages/_posts/vpn/image-20220222232927137.png)
+![image-20220222232927137](https://github.com/MaTthewSsD/Reto/blob/gh-pages/_posts/vpn/image-20220222232927137.png?raw=true)
 
-![image-20220222233004776](https://github.com/MaTthewSsD/Reto/blob/gh-pages/_posts/vpn/image-20220222233004776.png)
+![image-20220222233004776](https://github.com/MaTthewSsD/Reto/blob/gh-pages/_posts/vpn/image-20220222233004776.png?raw=true)
 
 Por defecto tendremos nuestro certificado de servidor, le damos a "añadir":
 
-![image-20220222233527923](https://github.com/MaTthewSsD/Reto/blob/gh-pages/_posts/vpn/image-20220222233527923.png)
+![image-20220222233527923](https://github.com/MaTthewSsD/Reto/blob/gh-pages/_posts/vpn/image-20220222233527923.png?raw=true)
 
 En certificados le indicamos el nombre y la Autoridad certificada que en nuestro caso será la que hemos creado anteriormente:
 
-![image-20220222233704257](https://github.com/MaTthewSsD/Reto/blob/gh-pages/_posts/vpn/image-20220222233704257.png)
+![image-20220222233704257](https://github.com/MaTthewSsD/Reto/blob/gh-pages/_posts/vpn/image-20220222233704257.png?raw=true)
 
 En Tipo de certificado le damos a "Server Certficate" y damos a "añadir" y "guardar":
 
-![image-20220222233905972](https://github.com/MaTthewSsD/Reto/blob/gh-pages/_posts/vpn/image-20220222233905972.png)
+![image-20220222233905972](https://github.com/MaTthewSsD/Reto/blob/gh-pages/_posts/vpn/image-20220222233905972.png?raw=true)
 
 Nos saldrá algo parecido a esto:
 
-![image-20220222233928377](https://github.com/MaTthewSsD/Reto/blob/gh-pages/_posts/vpn/image-20220222233928377.png)
+![image-20220222233928377](https://github.com/MaTthewSsD/Reto/blob/gh-pages/_posts/vpn/image-20220222233928377.png?raw=true)
 
 Una vez hecho los dos certificados, vamos a añadir nuestro certificado al usuario, en este caso "denis":
 
-![image-20220222234033762](https://github.com/MaTthewSsD/Reto/blob/gh-pages/_posts/vpn/image-20220222234033762.png)
+![image-20220222234033762](https://github.com/MaTthewSsD/Reto/blob/gh-pages/_posts/vpn/image-20220222234033762.png?raw=true)
 
 Le damos a editar y en el apartado "Certificados de usuario" le damos a "añadir" y en el "Tipo de certificado" le indicamos "User Certificate":
 
-![image-20220222234154915](https://github.com/MaTthewSsD/Reto/blob/gh-pages/_posts/vpn/image-20220222234154915.png)
+![image-20220222234154915](https://github.com/MaTthewSsD/Reto/blob/gh-pages/_posts/vpn/image-20220222234154915.png?raw=true)
 
-![image-20220222234239395](https://github.com/MaTthewSsD/Reto/blob/gh-pages/_posts/vpn/image-20220222234239395.png)
+![image-20220222234239395](https://github.com/MaTthewSsD/Reto/blob/gh-pages/_posts/vpn/image-20220222234239395.png?raw=true)
 
 Vemos que en nuestros certificados, aparece el usuario y su certificado:
 
-![image-20220222234330583](https://github.com/MaTthewSsD/Reto/blob/gh-pages/_posts/vpn/image-20220222234330583.png)
+![image-20220222234330583](https://github.com/MaTthewSsD/Reto/blob/gh-pages/_posts/vpn/image-20220222234330583.png?raw=true)
 
 Vamos a "OpenVPN" > "Servidores" y añadimos un nuevo servidor:
 
-![image-20220222235036387](https://github.com/MaTthewSsD/Reto/blob/gh-pages/_posts/vpn/image-20220222235036387.png)
+![image-20220222235036387](https://github.com/MaTthewSsD/Reto/blob/gh-pages/_posts/vpn/image-20220222235036387.png?raw=true)
 
 Le ponemos una descripción, le indicamos el protocolo UDP, la interfaz a la que va a escuchar y el puerto:
 
-![image-20220223131328109](https://github.com/MaTthewSsD/Reto/blob/gh-pages/_posts/vpn/image-20220223131328109.png)
+![image-20220223131328109](https://github.com/MaTthewSsD/Reto/blob/gh-pages/_posts/vpn/image-20220223131328109.png?raw=true)
 
 Le indicamos la red a la que nos queremos conectar remotamente:
 
-![image-20220223131658912](https://github.com/MaTthewSsD/Reto/blob/gh-pages/_posts/vpn/image-20220223131658912.png)
+![image-20220223131658912](https://github.com/MaTthewSsD/Reto/blob/gh-pages/_posts/vpn/image-20220223131658912.png?raw=true)
 
 Le indicamos que permita a los clientes conectados conservar sus conexiones:
 
-![image-20220223133313090](https://github.com/MaTthewSsD/Reto/blob/gh-pages/_posts/vpn/image-20220223133313090.png)
+![image-20220223133313090](https://github.com/MaTthewSsD/Reto/blob/gh-pages/_posts/vpn/image-20220223133313090.png?raw=true)
 
 Le indicamos que la pasarela sea solo por IPv4 y que el nivel de información sea el 3:
 
-![image-20220223133419220](https://github.com/MaTthewSsD/Reto/blob/gh-pages/_posts/vpn/image-20220223133419220.png)
+![image-20220223133419220](https://github.com/MaTthewSsD/Reto/blob/gh-pages/_posts/vpn/image-20220223133419220.png?raw=true)
 
-![image-20220223133445912](https://github.com/MaTthewSsD/Reto/blob/gh-pages/_posts/vpn/image-20220223133445912.png)
+![image-20220223133445912](https://github.com/MaTthewSsD/Reto/blob/gh-pages/_posts/vpn/image-20220223133445912.png?raw=true)
 
 Añadimos una nueva regla en el firewall para que nos permita el trafico:
 
-![image-20220223133613899](https://github.com/MaTthewSsD/Reto/blob/gh-pages/_posts/vpn/image-20220223133613899.png)
+![image-20220223133613899](https://github.com/MaTthewSsD/Reto/blob/gh-pages/_posts/vpn/image-20220223133613899.png?raw=true)
 
-![image-20220223133647056](https://github.com/MaTthewSsD/Reto/blob/gh-pages/_posts/vpn/image-20220223133647056.png)
+![image-20220223133647056](https://github.com/MaTthewSsD/Reto/blob/gh-pages/_posts/vpn/image-20220223133647056.png?raw=true)
 
 En la interfaz del OpenVPN también habilitamos una regla de paso:
 
-![image-20220223133804814](https://github.com/MaTthewSsD/Reto/blob/gh-pages/_posts/vpn/image-20220223133804814.png)
+![image-20220223133804814](https://github.com/MaTthewSsD/Reto/blob/gh-pages/_posts/vpn/image-20220223133804814.png?raw=true)
 
 Guardamos y aplicamos los cambios:
 
-![image-20220223133827313](https://github.com/MaTthewSsD/Reto/blob/gh-pages/_posts/vpn/image-20220223133827313.png)
+![image-20220223133827313](https://github.com/MaTthewSsD/Reto/blob/gh-pages/_posts/vpn/image-20220223133827313.png?raw=true)
 
 Ahora vamos a "Gerente de empaquetación":
 
-![image-20220223133905219](https://github.com/MaTthewSsD/Reto/blob/gh-pages/_posts/vpn/image-20220223133905219.png)
+![image-20220223133905219](https://github.com/MaTthewSsD/Reto/blob/gh-pages/_posts/vpn/image-20220223133905219.png?raw=true)
 
 Y buscamos en "Paquetes disponibles", "OpenVPN-client-export":
 
-![image-20220223134022076](https://github.com/MaTthewSsD/Reto/blob/gh-pages/_posts/vpn/image-20220223134022076.png)
+![image-20220223134022076](https://github.com/MaTthewSsD/Reto/blob/gh-pages/_posts/vpn/image-20220223134022076.png?raw=true)
 
 Instalamos:
 
-![image-20220223134038541](https://github.com/MaTthewSsD/Reto/blob/gh-pages/_posts/vpn/image-20220223134038541.png)
+![image-20220223134038541](https://github.com/MaTthewSsD/Reto/blob/gh-pages/_posts/vpn/image-20220223134038541.png?raw=true)
 
 Una vez hecho esto, vamos a "VPN" > "Client export" y descargamos la configuración del cliente:
 
-![image-20220223134151330](https://github.com/MaTthewSsD/Reto/blob/gh-pages/_posts/vpn/image-20220223134151330.png)
+![image-20220223134151330](https://github.com/MaTthewSsD/Reto/blob/gh-pages/_posts/vpn/image-20220223134151330.png?raw=true)
 
-![image-20220223134253978](https://github.com/MaTthewSsD/Reto/blob/gh-pages/_posts/vpn/image-20220223134253978.png)
+![image-20220223134253978](https://github.com/MaTthewSsD/Reto/blob/gh-pages/_posts/vpn/image-20220223134253978.png?raw=true)
 
 Permitimos una regla de firewall en azure para el paso por el puerto 1194:
 
-![image-20220223134657267](https://github.com/MaTthewSsD/Reto/blob/gh-pages/_posts/vpn/image-20220223134657267.png)
+![image-20220223134657267](https://github.com/MaTthewSsD/Reto/blob/gh-pages/_posts/vpn/image-20220223134657267.png?raw=true)
 
 Instalamos el fichero en OpenVPN:
 
-![image-20220223134917837](https://github.com/MaTthewSsD/Reto/blob/gh-pages/_posts/vpn/image-20220223134917837.png)
+![image-20220223134917837](https://github.com/MaTthewSsD/Reto/blob/gh-pages/_posts/vpn/image-20220223134917837.png?raw=true)
 
 Activamos la VPN:
 
-![image-20220223134947357](https://github.com/MaTthewSsD/Reto/blob/gh-pages/_posts/vpn/image-20220223134947357.png)
+![image-20220223134947357](https://github.com/MaTthewSsD/Reto/blob/gh-pages/_posts/vpn/image-20220223134947357.png?raw=true)
 
 Realizamos un ping al Pfsense e intantamos conectarnos al pfsense:
 
-![image-20220223135117401](https://github.com/MaTthewSsD/Reto/blob/gh-pages/_posts/vpn/image-20220223135117401.png)
+![image-20220223135117401](https://github.com/MaTthewSsD/Reto/blob/gh-pages/_posts/vpn/image-20220223135117401.png?raw=true)
