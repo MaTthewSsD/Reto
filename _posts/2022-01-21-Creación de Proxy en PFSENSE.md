@@ -4,7 +4,6 @@ title:  "Creación de Proxy en PFSENSE"
 date:   2022-01-21 11:32:19 +0100
 categories: jekyll update
 ---
-https://github.com/MaTthewSsD/Reto/blob/gh-pages/_posts/proxy/image-20220223232731491.png?raw=true
 ###### Reto Game of Networks
 
 ## Creación de Proxy en PFSENSE
