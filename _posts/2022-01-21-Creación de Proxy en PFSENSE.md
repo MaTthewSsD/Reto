@@ -1,0 +1,59 @@
+---
+layout: post
+title:  "Creación de Proxy en PFSENSE"
+date:   2022-01-21 11:32:19 +0100
+categories: jekyll update
+---
+https://github.com/MaTthewSsD/Reto/blob/gh-pages/_posts/proxy/image-20220223232731491.png?raw=true
+###### Reto Game of Networks
+
+## Creación de Proxy en PFSENSE
+
+#### Entrega de: *Denis Alexander Gutiérrez Salvador*
+
+#### 1. Empezando con PFSENSE:
+
+Instalamos "Squid":
+
+Vamos a "Gerente de Empaquetación" y buscamos "squid":
+
+![image-20220223232731491](https://github.com/MaTthewSsD/Reto/blob/gh-pages/_posts/proxy/image-20220223232731491.png?raw=true)
+
+Luego de instalarlo, vamos a "Services" y buscamos "Squid Proxy Server":
+
+![image-20220223232912216](https://github.com/MaTthewSsD/Reto/blob/gh-pages/_posts/proxy/image-20220223232912216.png?raw=true)
+
+![image-20220223232936025](https://github.com/MaTthewSsD/Reto/blob/gh-pages/_posts/proxy/image-20220223232936025.png?raw=true)
+
+![image-20220223233202221](https://github.com/MaTthewSsD/Reto/blob/gh-pages/_posts/proxy/image-20220223233202221.png?raw=true)
+
+Le damos a "Check to enable the Squid proxy" y seleccionamos la interfaz donde va a actuar, en nuestro caso es "DMZ":
+
+![image-20220223233424947](https://github.com/MaTthewSsD/Reto/blob/gh-pages/_posts/proxy/image-20220223233424947.png?raw=true)
+
+Habilitamos el log:
+
+![image-20220223233525989](https://github.com/MaTthewSsD/Reto/blob/gh-pages/_posts/proxy/image-20220223233525989.png?raw=true)
+
+Primero vamos a acceder a "www.taapas.es" para luego bloquearlo:
+
+![image-20220223233940378](https://github.com/MaTthewSsD/Reto/blob/gh-pages/_posts/proxy/image-20220223233940378.png?raw=true)
+
+Vamos a probarlo, bloqueando el acceso a "www.taapas.es", para ello vamos a "Blacklist":
+
+![image-20220224004013425](https://github.com/MaTthewSsD/Reto/blob/gh-pages/_posts/proxy/image-20220224004013425.png?raw=true)
+
+Y le damos a "guardar":
+
+![image-20220223234016512](https://github.com/MaTthewSsD/Reto/blob/gh-pages/_posts/proxy/image-20220223234016512.png?raw=true)
+
+Vamos a "Internet Properties" y ponemos nuestro proxy y el puerto:
+
+![image-20220224004847274](https://github.com/MaTthewSsD/Reto/blob/gh-pages/_posts/proxy/image-20220224004847274.png?raw=true)
+
+
+
+
+
+
+
